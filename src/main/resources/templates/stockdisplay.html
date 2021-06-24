@@ -1,0 +1,54 @@
+<!DOCTYPE HTML>
+
+<html>
+<head>
+<title>Sorted Stock</title>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<script
+	src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+<link rel="stylesheet"
+	href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
+<script src="/displaystock.js"></script>
+</head>
+
+<body>
+
+	<nav class="navbar navbar-inverse" style='background-color: skyblue'>
+		<div class="container-fluid">
+			<div class="navbar-header">
+				<a class="navbar-brand" href="#">Laptop Store</a>
+			</div>
+			<ul class="nav navbar-nav">
+				<li><a href="/">Home</a></li>
+				<li><a href="#">Login</a></li>
+				<li><a href="#">Registration</a></li>
+			</ul>
+
+		</div>
+	</nav>
+
+	<div class="container">
+		<h3>Sorted Product Table</h3>
+		<div class="row col-md-6 table-responsive">
+			<table id="stockTable" class="table table-bordered table-hover">
+				<thead>
+					<tr style='background-color: skyblue'>
+						<th>StockId</th>
+						<th>ProductName</th>
+						<th>Price</th>
+						<th>Type</th>
+						<th>TotalStock</th>
+					</tr>
+				</thead>
+				<tbody>
+				</tbody>
+			</table>
+
+			<div id="resultMsgDiv"></div>
+		</div>
+	</div>
+
+</body>
+</html>

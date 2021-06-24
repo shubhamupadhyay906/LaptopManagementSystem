@@ -1,0 +1,79 @@
+<!DOCTYPE HTML>
+
+<html>
+<head>
+<title>Product</title>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<script
+	src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+<script
+	src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<link rel="stylesheet"
+	href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
+
+<script src="/searchProduct.js"></script>
+</head>
+<body>
+
+	<nav class="navbar navbar-inverse" style='background-color:skyblue'>
+		<div class="container-fluid">
+			<div class="navbar-header">
+				<a class="navbar-brand" href="#">Laptop Store</a>
+			</div>
+			<ul class="nav navbar-nav">
+				<li><a href="/">Home</a></li>
+				<li><a href="#">Login</a></li>
+				<li><a href="#">Registration</a></li>
+			</ul>
+
+		</div>
+	</nav>
+
+	<div class="container" style='margin: 50px 0px 20px 200px'>
+
+		<div class="row col-md-4">
+			<form id="searchForm" style='padding: 20px 20px 20px 20px'>
+				<h4>Search Product</h4>
+				<div class="form-group">
+					<label for="addProductName">Product Name:</label> <input
+						type="text" class="form-control" id="addProductName"
+						placeholder="Enter Product Name" />
+				</div>
+
+				<button id="btn" type="button" class="btn btn-success">Search</button>
+
+			</form>
+			<div id="putResultDiv"></div>
+
+		</div>
+	</div>
+	
+	<div class="container">
+
+		<table id="stock" class="table table-striped">
+			<thead>
+				<tr>
+					<th>Product-Id</th>
+					<th>ProductName</th>
+					<th>Price</th>
+					<th>Type</th>
+					<th>Stock</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+
+
+</body>
+</html>

@@ -1,0 +1,76 @@
+<!DOCTYPE HTML>
+
+<html>
+<head>
+<title>Product</title>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<script
+	src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+<!--  <script
+	src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>-->
+<link rel="stylesheet"
+	href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
+
+
+<script src="/postStock.js"></script>
+<script src="/displaystock.js"></script>
+
+
+
+</head>
+<body>
+
+	<nav class="navbar navbar-inverse" style='background-color:skyblue'>
+		<div class="container-fluid">
+			<div class="navbar-header">
+				<a class="navbar-brand" href="#">Laptop Store</a>
+			</div>
+			<ul class="nav navbar-nav">
+				<li ><a href="/">Home</a></li>
+				<li><a href="#">Login</a></li>
+				<li><a href="#">Registration</a></li>
+			</ul>
+
+		</div>
+	</nav>
+
+
+	<div class="container">
+		<div id="stockForm" class="row col-md-4">
+			<form id="stockForm" style='padding: 20px 20px 20px 20px'>
+				<h4>Add New Product</h4>
+				<div class="form-group">
+					<label for="addFormName">Product Name:</label> <input type="text"
+						class="form-control" id="addFormName" placeholder="Enter Name" />
+				</div>
+
+				<div class="form-group">
+					<label for="addPrice">Price:</label> <input type="number"
+						class="form-control" id="addPrice"
+						placeholder="Enter price per unit" />
+				</div>
+
+				<div class="form-group">
+					<label for="addType">Product Type</label> <input type="text"
+						class="form-control" id="addType" placeholder="Enter product type" />
+				</div>
+
+				<div class="form-group">
+					<label for="addStock">Stock:</label> <input type="number"
+						class="form-control" id="addStock"
+						placeholder="Enter stock" />
+				</div>
+				<button type="submit" class="btn btn-success">ADD</button>
+			</form>
+			<div id="putResultDiv" style="margin: 10px 0px 10px 0px;"></div>
+		</div>
+
+	</div>
+
+
+
+
+</body>
+</html>
